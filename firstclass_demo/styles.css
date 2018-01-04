@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Noto+Sans');
+
+h1 {
+  color: rgb(255, 155, 100);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+p, li {
+  color: rgb(25, 25, 25);
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h3 {
+  color: rgb(255, 150, 100);
+  font-family: 'Josefin Sans', sans-serif;
+  text-decoration: underline;
+  font-weight: 500;
+}
