@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Fascinate|Hammersmith+One');
+
+.title {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 20px;
+  font-family: 'Hammersmith One', sans-serif;
+  color: orange;
+}
+
+p {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 25px;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  line-height: 2px;
+  font-size: 25px;
+  margin-top: 60px;
+  margin-bottom: 15px;
+  color: orange;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+.image {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.caption {
+  text-align: center;
+  line-height: 3px;
+  font-size: 15px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#search {
+  width: 120px;
+  height: 120px;
+  background: url(images/icons.png) 0, 0;
+  margin-right: 95px;
+  margin-left: 95px;
+  margin-top: 10px;
+}
+
+#home {
+  width: 120px;
+  height: 120px;
+  background: url(images/icons.png) -120px, 0;
+  margin-right: 95px;
+  margin-left: 95px;
+  margin-top: 10px;
+}
+
+#menu {
+  width: 120px;
+  height: 120px;
+  background: url(images/icons.png) -240px, 0;
+  margin-right: 95px;
+  margin-left: 95px;
+  margin-top: 10px;
+}
+
+#up {
+  width: 120px;
+  height: 120px;
+  background: url(images/icons.png) 240px, 0;
+  margin-right: 95px;
+  margin-left: 95px;
+  margin-top: 10px;
+}
+
+#stop {
+  width: 120px;
+  height: 120px;
+  background: url(images/icons.png) 120px, 0;
+  margin-right: 95px;
+  margin-left: 95px;
+  margin-top: 10px;
+}
+
+.eye {
+    width: 120px;
+    height: 120px;
+    margin-left: 725px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url("images/animation.png");
+
+    -webkit-animation: play .8s steps(10) infinite;
+       -moz-animation: play .8s steps(10) infinite;
+        -ms-animation: play .8s steps(10) infinite;
+         -o-animation: play .8s steps(10) infinite;
+            animation: play .8s steps(10) infinite;
+}
+
+@-webkit-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -1200px; }
+}
+
+@-moz-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -1200px; }
+}
+
+@-ms-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -1200px; }
+}
+
+@-o-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -1200px; }
+}
+
+@keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -1200px; }
+}

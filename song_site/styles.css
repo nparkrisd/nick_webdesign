@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+.middle {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 500px;
+  font-family: 'Anton', sans-serif;
+}

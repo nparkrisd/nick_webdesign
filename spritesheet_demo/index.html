@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Sprite Sheet</title>
+  </head>
+  <body>
+    <h1 class="title">Static Sprite Sheet</h1>
+    <p>A CSS sprite sheet is a single image file, which contains a group of smaller images that are aligned via pixel grid.  Sprite sheets optimize websites by using a single image file to display multiple images instead of them all being seperate images.</p>
+    <div class="image">
+      <img src="images/sprite_example.png">
+      <div class="caption">Fig. 1. Sprite Example, maxcdn.com, from Robert Gibb, February 6, 2015</div>
+    </div>
+    <h2>Demonstration</h2>
+    <p>As shown in Fig. 1. The sprite sheet has provided a section of the website with a full set of icons, using a single image.  This was achieved by first setting up a document with a pixel grid.</p>
+    <p>A pixel grid image has the ability to be subdivided into a variety of other images; i.e., if I set up a sprite with five icons, that are each 120 x 120 pixels, the entire image would be 600 x 120.</p>
+    <div class="image">
+      <img src="images/icons_outline.png">
+      <div class="caption">Fig. 2. Sprite Sheet Demo</div>
+    </div>
+    <p>In Fig. 2 a red border is shown to represent the 120 x 120 pixel grid that separates the icons.  In this example there are some basic icons that may have been used for a menu.  To separate the icon</p>
+    <div id="image">
+      <img id="search">
+      <img id="home">
+      <img id="menu">
+      <img id="up">
+      <img id="stop">
+    </div>
+    <p>As shown above each icon has been cut apart separately but still remains as one image, successfully optimizing the website. </p>
+    <h1 class="title">Animated Sprite Sheet</h1>
+    <p> The next most common use of a sprite sheet is animation.  It works similar to a gif image and around the same size as one, but a sprite sheet has the capability of controlling speed and duration.</p>
+    <div class="image">
+      <img src="images/animation.png">
+      <div class="caption">Fig. 3. Animated Sprite Sheet Demo</div>
+    </div>
+    <p>Fig. 3 shows a sprite animation sheet that is made up of 10 frames, with a 120 x 120 pixel grid. In total this image is 1200 x 120.  The image below shows how this image was cut apart as shown in my earlier example.</p>
+    <div class="image">
+      <img src="images/animation_outline.png">
+    </div>
+    <div class="eye"></div>
+    <h1 class="title">Thank You</h1>
+  </body>
+</html>
