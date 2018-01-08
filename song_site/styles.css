@@ -1,8 +1,104 @@
-@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Bungee|Prata');
 
-.middle {
-  text-align: center;
+body {
+  background-color: rgb(0, 5, 5);
+}
+
+h2 {
+  padding: 25px 25px;
+  margin: 0 auto;
+  max-width: 1280px;
   vertical-align: middle;
-  line-height: 500px;
-  font-family: 'Anton', sans-serif;
+  text-align: center;
+  color: rgb(255, 255, 240);
+  font-family: 'Bungee', cursive;
+  font-weight: 100;
+  font-size: 8em;
+  width: 100px;
+}
+
+a {
+  padding: 25px 25px;
+  margin: 0 auto;
+  max-width: 1280px;
+  vertical-align: middle;
+  text-align: center;
+  color: rgb(255, 255, 240);
+  font-family: 'Prata', serif;
+  font-weight: 100;
+  font-size: 1em;
+}
+
+.end {
+  padding: 25px 25px;
+  margin: 0 auto;
+  max-width: 1280px;
+  vertical-align: middle;
+  text-align: center;
+  color: rgb(255, 255, 240);
+  font-family: 'Prata', serif;
+  font-weight: 100;
+  font-size: 2em;
+  width: 500px;
+}
+
+.poem {
+  padding: 25px 25px;
+  margin: 0 auto;
+  max-width: 1280px;
+  vertical-align: middle;
+  text-align: center;
+  color: rgb(255, 255, 240);
+  font-family: 'Prata', serif;
+  font-weight: 100;
+  font-size: 1em;
+  width: 500px;
+}
+
+#poem_title {
+  padding: 50px 25px;
+  margin: 0 auto;
+  max-width: 1280px;
+  vertical-align: middle;
+  text-align: center;
+  color: rgb(255, 255, 240);
+  font-family: 'Prata', serif;
+  font-weight: 100;
+  font-size: 3em
+}
+
+.expand_text {
+  display: none;
+  padding: 10px 360px;
+  margin: 0 auto;
+  max-width: 1280px;
+  vertical-align: middle;
+  text-align: left;
+  color: rgb(255, 255, 240);
+  font-family: 'Prata', serif;
+  font-weight: 100;
+  font-size: 2em;
+  width: 750px;
+}
+
+.expand_textend {
+  display: none;
+  padding: 10px 280px;
+  margin: 0 auto;
+  max-width: 1280px;
+  vertical-align: middle;
+  text-align: center;
+  color: rgb(255, 255, 240);
+  font-family: 'Prata', serif;
+  font-weight: 100;
+  font-size: 2em;
+  width: 700px;
+}
+
+.expand:hover .expand_text {
+  display: block;
+}
+
+.expandend:hover .expand_textend {
+  display: block;
 }
