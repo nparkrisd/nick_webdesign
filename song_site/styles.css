@@ -1,7 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee|Prata');
 
 body {
-  background-color: rgb(0, 5, 5);
+  background: rgb(0, 5, 5);
+}
+
+h2 {
+  padding: 50px 25px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  max-width: 1280px;
+  vertical-align: middle;
+  text-align: center;
+  color: rgb(255, 255, 240);
+  font-family: 'Prata', serif;
+  font-weight: 100;
+  font-size: 1.5em;
 }
 
 .box {
@@ -87,7 +100,7 @@ a{
   color: rgb(255, 255, 240);
   font-family: 'Prata', serif;
   font-weight: 100;
-  font-size: 3em
+  font-size: 3em;
 }
 
 .expand_text {
