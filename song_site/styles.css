@@ -4,20 +4,30 @@ body {
   background-color: rgb(0, 5, 5);
 }
 
-h2 {
-  padding: 25px 25px;
+.box {
+  width: 20px;
+  height: 100px;
+  background-color: rgb(255, 255, 240);
   margin: 0 auto;
-  max-width: 1280px;
+  margin-bottom: 40px;
   vertical-align: middle;
-  text-align: center;
-  color: rgb(255, 255, 240);
-  font-family: 'Bungee', cursive;
-  font-weight: 100;
-  font-size: 8em;
-  width: 100px;
+  border-radius: 2px;
+  transition: width 4s,height 4s, border-radius 5s;
 }
 
-a {
+.box:hover {
+  width: 800px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.last:hover {
+  width: 250px;
+  height: 40px;
+  border-radius: 8px
+}
+
+a{
   padding: 25px 25px;
   margin: 0 auto;
   max-width: 1280px;
@@ -39,6 +49,19 @@ a {
   font-family: 'Prata', serif;
   font-weight: 100;
   font-size: 2em;
+  width: 500px;
+}
+
+.link {
+  padding: 25px 25px;
+  margin: 0 auto;
+  max-width: 1280px;
+  vertical-align: middle;
+  text-align: center;
+  color: rgb(255, 255, 240);
+  font-family: 'Prata', serif;
+  font-weight: 100;
+  font-size: 1.5em;
   width: 500px;
 }
 
@@ -68,8 +91,7 @@ a {
 }
 
 .expand_text {
-  display: none;
-  padding: 10px 360px;
+  display: block;
   margin: 0 auto;
   max-width: 1280px;
   vertical-align: middle;
@@ -79,26 +101,39 @@ a {
   font-weight: 100;
   font-size: 2em;
   width: 750px;
+  opacity: 0;
+  transition: opacity 4s;
 }
 
 .expand_textend {
-  display: none;
-  padding: 10px 280px;
+  display: block;
   margin: 0 auto;
   max-width: 1280px;
   vertical-align: middle;
   text-align: center;
-  color: rgb(255, 255, 240);
+  color: rgba(255, 255, 240, 1);
   font-family: 'Prata', serif;
   font-weight: 100;
   font-size: 2em;
   width: 700px;
+  opacity: 0;
+  transition: opacity 4s;
 }
 
-.expand:hover .expand_text {
+.box:hover + .expand_text {
   display: block;
+  opacity: 1;
 }
 
-.expandend:hover .expand_textend {
+.last:hover + .expand_textend {
   display: block;
+  opacity: 1;
+}
+
+.spacer {
+  height: 500px;
+}
+
+.small_spacer {
+  height: 100px;
 }
