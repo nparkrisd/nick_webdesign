@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200');
+
+.left{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200px;
+	height: 100vh;
+	background-color: #d3d3d3;
+	opacity: 0.5;
+	background: url(images/history.jpg);
+	background-position: center;
+	background-size: 150vh;
+	transition: width .5s, opacity .5s;
+}
+
+.right{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 200px;
+	height: 100vh;
+	background-color: #d3d3d3;
+	opacity: 0.5;
+	background: url(images/mvisit.png);
+	background-size: 150vh;
+	background-position: center;
+	transition: width .5s, opacity .5s;
+}
+
+.ltext{
+	color: black;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 200;
+	font-size: 2.5rem;
+	float: left;
+	margin-left: 2rem;
+	transform: translateY(40vh);
+	letter-spacing: 0px;
+	transition: all .5s;
+}
+
+.rtext{
+	color: black;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 200;
+	font-size: 2.5rem;
+	float: right;
+	margin-left: 3rem;
+	transform: translateY(40vh);
+	transition: all .5s;
+}
+
+.left:hover{
+	width: 225px;
+	opacity: .7;
+}
+
+.right:hover{
+	width: 225px;
+	opacity: .7;
+}
+
+.right:hover .rtext{
+	margin-left: 3.5rem;
+	color: #ff492d;
+	letter-spacing: 3px;
+}
+
+.left:hover .ltext{
+	margin-left: 2rem;
+	color: #2d77ff;
+	letter-spacing: 3px;
+}
+.search{
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+}
+
+input{
+	margin: auto;
+	border-width: 1px;
+    border-color: #d3d3d3;
+    border-style: solid;
+    width: 600px;
+    height: 35px;
+	font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    box-shadow: 0px 1px 4px -1px black;
+    text-indent: 23px;
+}
+
+#google{
+	height: auto;
+	width: 250px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 45vh;
+}
+
+#mic{
+	position: relative;
+	width: 25px;
+	height: auto;
+	transform: translateY(35px);
+	left: 570px
+}
+
+.info{
+	display: block;
+	width: 200px;
+	height: auto;
+	margin-left: auto;
+	margin-right: 100px;
+	margin-top: -2.5rem;
+}
+
+#me{
+	width: 50px;
+	height: auto;
+	border-radius: 50px;
+}
+
+#bell{
+	width: 30px;
+	height: auto;
+	transform: translate3d(-15px, -10px, -10px);
+	opacity: .7;
+}
+
+#apps{
+	width: 30px;
+	height: auto;
+	transform: translate3d(-20px, -10px, -20px);
+	opacity: .7;
+}
+
+#timages{
+	font-family: 'Work Sans', sans-serif;
+	font-size: .8rem;
+	color: black;
+	font-weight: 900;
+	transform: translate3d(-80px, 45px, 0px);
+}
+
+#tmail{
+	font-family: 'Work Sans', sans-serif;
+	font-size: .8rem;
+	color: black;
+	font-weight: 900;
+	transform: translate3d(-120px, 73px, 0px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
