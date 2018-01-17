@@ -8,7 +8,7 @@ body {
 
 .head{
   position: fixed;
-  height: 6rem;
+  height: 3rem;
   width: 100vw;
   top: 0;
   left: 0;
@@ -18,24 +18,11 @@ body {
   margin-top: 0;
   box-shadow: 0px 0px 10px -4px black;
   z-index: 20;
-}
-
-h1{
-  font-family: 'Work Sans', sans-serif;
-  color: #ff492d; 
-  font-weight: 100;
-  text-align: center;
-  vertical-align: middle;
-  margin-top: 1.5rem;
-  margin-bottom: 0rem;
-  margin-left: 100px;
-  margin-right: 100px;
-  left: 0px;
-  right: 0px;
+  opacity: 1;
 }
 
 .images{
-  margin-top: 10rem;
+  margin-top: 5rem;
   font-size: 0;
   background-color: white;
   border-style: solid;
@@ -91,6 +78,14 @@ img {
   display: block;
   background: #ccc;
   transition: transform .2s ease-in-out;
+}
+
+#google{
+  background-color: white; 
+  width: 100px;
+  height: auto;
+  margin: auto;
+  margin-top: .5rem;
 }
 
 .p a {
