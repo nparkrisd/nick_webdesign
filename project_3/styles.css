@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:900');
 
+/*HTML*/
+
+html{
+	background-color: white;
+}
+
 /*Body*/
+
+body{
+	display: none;
+}
 
 #firstpg{
 	background-color: white;
@@ -21,7 +31,7 @@
 	background-color: black;
 	margin-bottom: auto;
 	box-shadow: 0px 0px 0px 0px #000000;
-	transition: all .5s;
+	transition: all 1s;
 }
 
 #start_text{
@@ -110,11 +120,372 @@
 
 #blink{
 	display: block;
-	width: 5vw;
+	width: 6rem;
 	height: auto;
 	float: left;
 	margin-left: 5vw;
-	margin-right: 50vw;
+	margin-right: auto;
 	margin-top: 10vh;
+	animation: blink 1s .5s 4, blink_move 1s 4s 1 forwards ease;
 }
+
+@keyframes blink{
+	0%{
+		opacity: 1;
+	}
+
+	50%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes blink_move{
+	0%{
+		margin-left: 5vw;
+	}
+
+	100%{
+		margin-left: 30vw;
+	}
+}
+
+/*Location Title And Loc*/
+
+
+.loc_title{
+	position: inherit;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2.5rem;
+	color: black;
+	transform: translate(0vh, 13vh);
+	overflow: hidden;
+	max-width: 0;
+	white-space: nowrap;
+	animation: text_apear 3.5s 5s steps(60, end) forwards;
+}
+
+.loc_title_end{
+	position: absolute;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1rem;
+	color: black;
+	top: 0;
+	left: 1vw;
+	opacity: 0;
+	animation: text_fade 2s 5.5s 1 forwards ease;
+	z-index: 20;
+}
+
+@keyframes text_apear{
+	0%{
+		max-width: 0
+	}
+
+	100%{
+		max-width: 100%
+	}
+}
+
+@keyframes text_fade{
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+
+/*Changing Location Images*/
+
+#loc_one_img{
+	position: absolute;
+	float: left;
+	height: 100vh;
+	width: 0vw;
+	background-image: url(images/l1.png);
+	background-size: 50vh;
+	background-position: center;
+	top: 0;
+	left: 0;
+	animation: limg_slide 2s 5.5s 1 forwards ease, lchange_img 16s 8s ease infinite;
+}
+@keyframes limg_slide {
+	0%{
+		width: 0;
+	}
+
+	100%{
+		width: 20vw;
+	}
+}
+
+
+@keyframes lchange_img{
+	0%{
+		background-image: url(images/l1.png);
+	}
+
+	50%{
+		background-image: url(images/l2.png);
+	}
+
+	100%{
+		background-image: url(images/l1.png);
+	}
+}
+
+#loc_two_img{
+	position: absolute;
+	float: left;
+	height: 100vh;
+	width: 0vw;
+	background-image: url(images/r1.jpg);
+	background-size: 200vh;
+	overflow: hidden;
+	background-position: center;
+	top: 0;
+	left: 0;
+	animation: rimg_slide 2s 5.5s 1 forwards ease, rchange_img 16s 8s ease infinite;
+}
+@keyframes rimg_slide {
+	0%{
+		width: 0;
+	}
+
+	100%{
+		width: 20vw;
+	}
+}
+
+
+@keyframes rchange_img{
+	0%{
+		background-image: url(images/r1.jpg);
+	}
+
+	50%{
+		background-image: url(images/r2.jpg);
+	}
+
+	100%{
+		background-image: url(images/r1.jpg);
+	}
+}
+
+#loc_three_img{
+	position: absolute;
+	float: left;
+	height: 100vh;
+	width: 0vw;
+	background-image: url(images/ll1.jpg);
+	background-size: 200vh;
+	background-position: center;
+	top: 0;
+	left: 0;
+	animation: llimg_slide 2s 5.5s 1 forwards ease, llchange_img 16s 8s ease infinite;
+}
+@keyframes llimg_slide {
+	0%{
+		width: 0;
+	}
+
+	100%{
+		width: 20vw;
+	}
+}
+
+
+@keyframes llchange_img{
+	0%{
+		background-image: url(images/ll1.jpg);
+	}
+
+	50%{
+		background-image: url(images/ll2.jpg);
+	}
+
+	100%{
+		background-image: url(images/ll1.jpg);
+	}
+}
+
+#loc_four_img{
+	position: absolute;
+	float: left;
+	height: 100vh;
+	width: 0vw;
+	background-image: url(images/lr1.jpg);
+	background-size: 150vh;
+	background-position: center;
+	top: 0;
+	left: 0;
+	animation: lrimg_slide 2s 5.5s 1 forwards ease, lrchange_img 16s 8s ease infinite;
+}
+@keyframes lrimg_slide {
+	0%{
+		width: 0;
+	}
+
+	100%{
+		width: 20vw;
+	}
+}
+
+
+@keyframes lrchange_img{
+	0%{
+		background-image: url(images/lr1.jpg);
+	}
+
+	50%{
+		background-image: url(images/lr2.jpg);
+		background-size: 180vh;
+	}
+
+	100%{
+		background-image: url(images/lr1.jpg);
+	}
+}
+
+#loc_five_img{
+	position: absolute;
+	float: left;
+	height: 100vh;
+	width: 0vw;
+	background-image: url(images/rr1.jpg);
+	background-size: 150vh;
+	background-position: center;
+	top: 0;
+	left: 0;
+	animation: rrimg_slide 2s 5.5s 1 forwards ease, rrchange_img 16s 8s ease infinite;
+}
+@keyframes rrimg_slide {
+	0%{
+		width: 0;
+	}
+
+	100%{
+		width: 20vw;
+	}
+}
+
+
+@keyframes rrchange_img{
+	0%{
+		background-image: url(images/rr1.jpg);
+	}
+
+	50%{
+		background-image: url(images/rr2.jpg);
+		background-size: 180vh;
+	}
+
+	100%{
+		background-image: url(images/rr1.jpg);
+	}
+}
+
+/*Location Desc And Line Down*/
+
+.hline{
+	display: block;
+	height: 0rem;
+	width: .35rem;
+	background-color: black; 
+	float: left;
+	transform: translate(0vh, 15vh);
+	animation: bline 2s 7s 1 forwards ease;
+}
+
+.desc{
+	position: block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5rem;
+	color: black;
+	max-width: 0;
+	overflow: hidden;
+	max-width: 0;
+	white-space: nowrap;
+	transform: translate(2vh, 15vh);
+	animation: long_text 3s 7.5s ease-in-out forwards;
+}
+
+@keyframes bline{
+	0%{
+		height: 0;
+	}
+
+	100%{
+		height: 30rem;
+	}
+}
+
+@keyframes long_text{
+	0%{
+		max-width: 0%;
+	}
+
+	100%{
+		max-width: 100%;
+	}
+}
+
+.back{
+	position: absolute;
+	font-family: 'Raleway', sans-serif;
+	font-size: 5rem;
+	top: 61vh;
+	bottom: 39vh;
+	left: 31vw;
+	right: 79vw;
+	white-space: nowrap;
+	color: black;
+	opacity: 0;
+	text-align: center;
+	vertical-align: middle;
+	transform: rotate(-90deg);
+	animation: apear_back 3s 8s ease forwards;
+}
+
+@keyframes apear_back{
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+
+/*Next Arrow*/
+
+#arrow_next{
+	width: 180px;
+	height: auto;
+	margin-bottom: auto;
+	transition: all .5s;
+	opacity: 0;
+	float: right;
+	margin-right: 10vw;
+	margin-top: -15vh;
+	margin-bottom: -50vh;
+	animation: apear_back 3s 8.5s ease forwards;
+
+}
+
+@keyframes arrow_fade{
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+
 
