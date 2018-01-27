@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+.container{
+	display: flex;
+	padding: 4px;
+	flex-direction: column;
+	overflow: hidden;
+	margin-top: 35vh;
+}
+
+a{
+	color: black;
+	text-decoration:  none;
+}
+
+h1{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1rem;
+	padding: 12px;
+	margin: auto;
+	transition: all .5s;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+h1:hover{
+	font-size: 1.5rem;
+}

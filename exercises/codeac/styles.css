@@ -1,0 +1,10 @@
+div{
+	display: flex;
+	padding: 6px;
+	flex-direction: column;
+}
+
+img{
+	padding: 6px;
+	margin: auto;
+}
