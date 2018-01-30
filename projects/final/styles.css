@@ -73,12 +73,18 @@ h3.navit {
 	display: inline-block;
 	padding: 5px 30px;
 	color: #fff;
+	transition: all .5s;
+}
+
+h3.navit:hover {
+	color: #4B987A;
+	font-size: 1rem;
 }
 
 /*------White Box Paragraph------*/
 .w-paragraph {
 	color: #555;
-	background-color: #ccc;
+	background-color: #fff;
 	padding:50px 15vw;
 	text-align: justify;
 }
@@ -93,8 +99,8 @@ h3.navit {
 }
 
 .map-1 {
-	width: 50vw;
+	width: 60vw;
 	height: auto;
-	margin-left: 10vw;
+	margin-left: 5vw;
 }
 
