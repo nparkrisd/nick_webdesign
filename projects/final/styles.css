@@ -12,6 +12,16 @@ h3 {
   color: #111;
 }
 
+.paragraph {
+  background: white; 
+  padding: 15px 20px; 
+  border-radius: 5px; 
+  box-shadow: 0px 0px 20px -10px #000000;"
+}
+
+
+
+
 
 /*------Paralax Images------*/
 .pximg-1 {
@@ -32,6 +42,7 @@ h3 {
     font-size: 25px;
     letter-spacing: 10px;
     text-transform: uppercase;
+    transition: all .5s;
 }
 
 .border-sub {
@@ -42,6 +53,7 @@ h3 {
     background-color: black;
     padding: 5px 5px;
     border-radius: 3px;
+    transition: all .5s;
 }
 
 .caption {
@@ -52,11 +64,11 @@ h3 {
     text-align: center;
 }
 
-@media only screen and (max-device-width: 1024px) {
-    .pximg-1 {
-        background-attachment: scroll;
-    }
-}
+
+
+
+
+
 
 /*------B-Menu------*/
 .b-menu {
@@ -65,6 +77,7 @@ h3 {
 	padding: 10px 40px;
 	width: auto;
 	text-align: center;
+  transition: all .5s;
 }
 
 h3.navit {
@@ -76,18 +89,47 @@ h3.navit {
 	transition: all .5s;
 }
 
+h3.navit-b {
+  font-size: .9rem;
+  text-align: center; 
+  display: inline-block;
+  padding: 5px 30px;
+  transition: all .5s;
+  background-color: #D89232; 
+  border-radius: 3px; 
+  color: #000; 
+  font-weight: 600;"
+}
+
 h3.navit:hover {
-	color: #4B987A;
+	color: #D89232;
 	font-size: 1rem;
 }
+
+h3.navit-b:hover {
+  font-size: 1rem;
+}
+
+
+
+
+
+
+
 
 /*------White Box Paragraph------*/
 .w-paragraph {
 	color: #555;
 	background-color: #fff;
-	padding:50px 15vw;
+	padding: 10px 15vw;
 	text-align: justify;
 }
+
+
+
+
+
+
 
 /*------Statistics------*/
 .g-statistics {
@@ -104,3 +146,61 @@ h3.navit:hover {
 	margin-left: 5vw;
 }
 
+
+
+
+
+
+
+
+@media only screen and (max-device-width: 1024px) {
+    .pximg-1 {
+      background-attachment: scroll;
+    }
+
+    .w-paragraph {
+      padding:10px 5vw;
+    }
+
+    h3.navit {
+      font-size: .7rem;
+      background: black;
+      padding: 5px 10px;
+      font-weight: bold;
+    } 
+
+    h3.navit-b {
+      font-size: .7rem;
+      background: #D89232;
+      padding: 5px 10px;
+      font-weight: bold;
+    }   
+
+    h3.navit:hover {
+      color: #fff;
+      font-size: .9rem;
+    }
+
+    h3.navit-b:hover {
+      color: #000;
+      font-size: .9rem;
+    }
+
+    .border {
+      color: #fff;
+      font-size: 20px;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+    }
+
+    .border-sub {
+      color: #fff;
+      font-size: 15px;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      background-color: black;
+      padding: 5px 5px;
+      border-radius: 3px;
+    }
+
+}
