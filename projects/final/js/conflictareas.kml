@@ -2,11 +2,11 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Placemark>
       <Point><coordinates>84.494179,27.576705</coordinates></Point>
-  </Placemark>
-  <Placemark>
+
+
       <Point><coordinates>84.506661,27.55208</coordinates></Point>
-  </Placemark>
-  <Placemark>
+
+
       <Point><coordinates>84.491676,27.564145</coordinates></Point>
   </Placemark>
   <Placemark>
