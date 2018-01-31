@@ -8,38 +8,44 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKnhj5i_gMftPH71vVll7vBFCUgwBwuRk&callback=initMap"></script>
 </head>
 
 <body>
 	<!-- The Header Image -->
-	<div class="pximg-1"></div>
+	<div class="pximg1"></div>
 	<div class="caption">
 		<span class="border">conflict and coexistence</span>
 		<br>
-		<span class="border-sub">Chitwan Tigers</span>
+		<span class="bordersub">Chitwan Tigers</span>
 	</div>
-	<div class="b-menu">
+	<div class="bmenu">
 		<h3 class="navit">the problems</h3>
 		<h3 class="navit">statistics</h3>
 		<h3 class="navit">our coexistence</h3>
 		<h3 class="navit">solutions</h3>
-		<h3 class="navit-b">how to help</h3>
+		<h3 class="navitb">how to help</h3>
 	</div>
 
 	<!-- Header -->
 	
 
 	<!-- Paragraph One -->
-	<div class="w-paragraph">
+	<div class="wparagraph">
 		<h3 style="text-align: center; letter-spacing: 10px; margin-bottom: 10px;">The Problems</h3>
 		<p class="paragraph">The Bengal tigers (Panthera tigris) and villagers of Chitwan, Nepal have been in contention for decades (1979).  There have been more cases of tigers killing humans and their livestock in this past decade then ever before.  This will only continue as the population rises in both tigers and residence.  In 1950, After malaria was eliminated the population became a mixture of immigrants from surrounding countries and the indigenous peoples of Chitwan.  This brought a new population of farmers who required land as a place to farm and graze livestock.  In 1973 the Chitwan National Park (CNP) was established bringing in new tourists seeking entertainment, research, work, etc.  Villagers became less reliant on subsistence agriculture for their source income due to increased eco-tourism in newer generations.  With these new generations the population has increased to 579,984 people (279,087 male and 300,897 female) in 2011. <br><br> After Chitwan National Park had established its boundaries, (1999) 223,260 people were living within its buffer zones (an area of land designated for environmental protection).  As these new zones were allocated, authorities forced villagers to relocate in the name of new conservation efforts, with little to no compensation.  Most villagers affected depend on the agriculture, or livestock for a living. Farmers depend on livestock manure for fertilizer, and as important sources of food and protein.  Access to the forest for grazing, cutting of tree branches for fodder, and fuel-wood are a important part of these people's lives. <br><br>Furthermore, The trend of killing humans has exponentially increased over past few decades from 1.2 persons per year in 1998 to 7.2 per year in 2006.  A study on the traits of human killing tigers by thg Global Ecology and Conservation group have concluded that transient tigers without a territory, or physically impaired are most likely to cause conflict.  Tigers in areas scarce of wild pray will feed on livestock, affecting villagers who depend on them for income, often resulting in no compensation.  This is due to the estimated 120 and rising population of tigers that live in the CNP, on top of Nepal committing to double the population by 2020 (250 tigers estimated).</p>
 	</div>
 
-	<!-- Statistics -->
+	<!-- Google API Map -->
+	<div class="wparagraph">
+		<h3 style="text-align: center; letter-spacing: 10px; margin-bottom: 15px;">geospatial data map</h3>
+			<div id="map"></div>
+	</div>
 
-	<div class="w-paragraph">
+	<!-- Statistics -->
+	<div class="wparagraph">
 		<h3 style="text-align: center; letter-spacing: 10px; margin-bottom: 10px;">Statistics</h3>
-		<h3 style="text-align: center; letter-spacing: 10px; margin-top: 40px; font-size: 10px;">tiger threats</h3>
+		<h3 style="text-align: center; letter-spacing: 8px; margin-top: 60px; font-size: 10px;">tiger threats</h3>
 		<p class="paragraph">The Bengal tigers (Panthera tigris) and villagers of Chitwan, Nepal have been in contention for decades (1979).  There have been more cases of tigers killing humans and their livestock in this past decade then ever before.  This will only continue as the population rises in both tigers and residence.  In 1950, After malaria was eliminated the population became a mixture of immigrants from surrounding countries and the indigenous peoples of Chitwan.  This brought a new population of farmers who required land as a place to farm and graze livestock.  In 1973 the Chitwan National Park (CNP) was established bringing in new tourists seeking entertainment, research, work, etc.  Villagers became less reliant on subsistence agriculture for their source income due to increased eco-tourism in newer generations.  With these new generations the population has increased to 579,984 people (279,087 male and 300,897 female) in 2011. <br><br> After Chitwan National Park had established its boundaries, (1999) 223,260 people were living within its buffer zones (an area of land designated for environmental protection).  As these new zones were allocated, authorities forced villagers to relocate in the name of new conservation efforts, with little to no compensation.  Most villagers affected depend on the agriculture, or livestock for a living. Farmers depend on livestock manure for fertilizer, and as important sources of food and protein.  Access to the forest for grazing, cutting of tree branches for fodder, and fuel-wood are a important part of these people's lives. <br><br>Furthermore, The trend of killing humans has exponentially increased over past few decades from 1.2 persons per year in 1998 to 7.2 per year in 2006.  A study on the traits of human killing tigers by thg Global Ecology and Conservation group have concluded that transient tigers without a territory, or physically impaired are most likely to cause conflict.  Tigers in areas scarce of wild pray will feed on livestock, affecting villagers who depend on them for income, often resulting in no compensation.  This is due to the estimated 120 and rising population of tigers that live in the CNP, on top of Nepal committing to double the population by 2020 (250 tigers estimated).</p>
 	</div>
 
