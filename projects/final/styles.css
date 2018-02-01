@@ -20,10 +20,10 @@ h3 {
 /*------Paralax Images------*/
 .pximg1 {
  	position: relative;
-  	background-attachment: fixed;
-  	background-position: center;
-  	background-repeat: no-repeat;
-  	background-size: cover
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
 }
 
 .pximg1 {
@@ -97,11 +97,11 @@ h3.navitb {
 
 h3.navit:hover {
 	color: #D89232;
-	font-size: 1rem;
+	font-size: .92rem;
 }
 
 h3.navitb:hover {
-  font-size: 1rem;
+  font-size: .92rem;
 }
 
 
@@ -136,15 +136,23 @@ h3.navitb:hover {
   background: white; 
   padding: 15px 20px;
   column-count: 3;
+  column-rule: 1px solid;
   column-gap: 40px;
+  transition: all .5s;
 }
 
 
+/**/
 
 @media only screen and (max-width: 1350px) {
     .paragraph {
       column-count: 2;
-      column-gap: 40px;
+      column-gap: 60px;
+}
+
+@media only screen and (max-width: 950px) {
+    .paragraph {
+      column-count: 1;
 }
 
 @media only screen and (max-device-width: 1024px) {
