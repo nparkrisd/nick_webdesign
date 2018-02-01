@@ -1,34 +1,41 @@
 /*------General Styles------*/
 body, html {
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
+ 	 height: 100%;
+ 	 margin: 0;
+ 	 font: 400 15px/1.8 "Lato", sans-serif;
 }
 
 h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
+  	letter-spacing: 5px;
+ 	text-transform: uppercase;
+ 	font: 20px "Lato", sans-serif;
+  	color: #111;
 }
 
-
+* {
+    box-sizing: border-box;
+}
 
 
 
 
 /*------Paralax Images------*/
-.pximg1 {
+.pximg1, .pximg2 {
  	position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover
 }
 
 .pximg1 {
 	background-image: url(images/tiger.jpg);
 	min-height: 100%;
+}
+
+.pximg2 {
+	background-image: url(images/tiger2.jpg);
+	min-height: 200px;
 }
 
 .border {
@@ -64,14 +71,16 @@ h3 {
 
 
 
+
+
 /*------B-Menu------*/
 .bmenu {
 	flex-wrap: wrap;
-	background-color: #000;
+	background-color: black;
 	padding: 10px 40px;
 	width: auto;
 	text-align: center;
-  transition: all .5s;
+   	transition: all .5s;
 }
 
 h3.navit {
@@ -96,12 +105,11 @@ h3.navitb {
 }
 
 h3.navit:hover {
-	color: #D89232;
-	font-size: .92rem;
+	font-size: .95rem;
 }
 
 h3.navitb:hover {
-  font-size: .92rem;
+  font-size: .95rem;
 }
 
 
@@ -137,72 +145,144 @@ h3.navitb:hover {
   padding: 15px 20px;
   column-count: 3;
   column-rule: 1px solid;
-  column-gap: 40px;
+  column-gap: 60px;
+  transition: all .5s;
+}
+
+.disc {
+  background: white; 
+  padding: 15px 20px;
+  column-count: 1;
   transition: all .5s;
 }
 
 
-/**/
+
+
+
+
+/*------Colums------*/
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-right: 0; 
+    padding-left: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.paragraphcl {
+  background: white; 
+  padding: 15px 20px;
+  border-right-width: 1px;
+  border-right-style: solid; 
+  border-right-color: black; 
+  padding-top: 0px;
+}
+
+.paragraphcr {
+  background: white; 
+  padding: 15px 20px;
+  transition: all .5s;
+  padding-top: 0px;
+}
+
+
+
+
+
 
 @media only screen and (max-width: 1350px) {
     .paragraph {
-      column-count: 2;
-      column-gap: 60px;
-}
+     	column-count: 2;
+	}
 
-@media only screen and (max-width: 950px) {
-    .paragraph {
-      column-count: 1;
+	.disc {
+  		column-count: 1;
+	}
+
+
+}
+@media only screen and (max-width: 1050px) {
+   	.column {
+    	float: left;
+    	width: 100%;
+    	padding: 10px;
+    	padding-right: 0; 
+    	padding-left: 0;
+	}
+
+	.paragraphcl {
+	  	border-right-width: 0px;
+	}
+
+	.paragraph {
+     	column-count: 1;
+	}
+
+	.disc {
+  		column-count: 1;
+	}
 }
 
 @media only screen and (max-device-width: 1024px) {
     .pximg1 {
-      background-attachment: scroll;
+   		background-attachment: scroll;
     }
 
+    .pximg2 {
+   		background-attachment: scroll;
+    }
+
+
     .wparagraph {
-      padding:10px 5vw;
+    	padding:10px 5vw;
     }
 
     h3.navit {
-      font-size: .7rem;
-      background: black;
-      padding: 5px 10px;
-      font-weight: bold;
+        font-size: .7rem;
+      	background: black;
+     	padding: 5px 10px;
+      	font-weight: bold;
     } 
 
     h3.navitb {
-      font-size: .7rem;
-      background: #D89232;
-      padding: 5px 10px;
-      font-weight: bold;
+        font-size: .7rem;
+      	background: #D89232;
+      	padding: 5px 10px;
+      	font-weight: bold;
     }   
 
     h3.navit:hover {
-      color: #fff;
-      font-size: .9rem;
+      	color: #fff;
+      	font-size: .9rem;
     }
 
     h3.navitb:hover {
-      color: #000;
-      font-size: .9rem;
+      	color: #000;
+      	font-size: .9rem;
     }
 
     .border {
-      color: #fff;
-      font-size: 20px;
-      letter-spacing: 10px;
-      text-transform: uppercase;
+     	 color: #fff;
+      	font-size: 20px;
+      	letter-spacing: 10px;
+      	text-transform: uppercase;
     }
 
     .bordersub {
-      color: #fff;
-      font-size: 15px;
-      letter-spacing: 10px;
-      text-transform: uppercase;
-      background-color: black;
-      padding: 5px 5px;
-      border-radius: 3px;
+      	color: #fff;
+      	font-size: 15px;
+      	letter-spacing: 10px;
+     	text-transform: uppercase;
+      	background-color: black;
+      	padding: 5px 5px;
+      	border-radius: 3px;
     }
 
 }
