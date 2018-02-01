@@ -132,7 +132,7 @@ h3.navitb:hover {
 
 
 
-/*------White Box Paragraph------*/
+/*------Paragraph------*/
 .wparagraph {
 	color: #555;
 	background-color: #fff;
@@ -155,6 +155,8 @@ h3.navitb:hover {
   column-count: 1;
   transition: all .5s;
 }
+
+
 
 
 
@@ -192,6 +194,30 @@ h3.navitb:hover {
   padding-top: 0px;
 }
 
+.paragraphcl2 {
+  background: black; 
+  padding: 15px 30px;
+  margin: 0px 0px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.paragraphcr2 {
+  background: black; 
+  padding: 15px 30px;
+  margin: 0px 0px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#ti {
+	font-style: normal;
+	letter-spacing: 5px;
+ 	text-transform: uppercase;
+ 	font-size: 15px;
+  	color: white;
+
+}
 
 
 
