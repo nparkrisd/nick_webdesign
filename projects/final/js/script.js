@@ -9,4 +9,10 @@ function initMap() {
         suppressInfoWindows: true,
         map: map
     });
+
+    var kmlLayer = new google.maps.KmlLayer({
+        url: 'https://raw.githubusercontent.com/nparkrisd/nick_webdesign/master/projects/final/js/carea2.kml',
+        suppressInfoWindows: true,
+        map: map
+    });
 }

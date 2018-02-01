@@ -135,11 +135,17 @@ h3.navitb:hover {
 .paragraph {
   background: white; 
   padding: 15px 20px;
+  column-count: 3;
+  column-gap: 40px;
 }
 
 
 
-
+@media only screen and (max-width: 1350px) {
+    .paragraph {
+      column-count: 2;
+      column-gap: 40px;
+}
 
 @media only screen and (max-device-width: 1024px) {
     .pximg1 {
