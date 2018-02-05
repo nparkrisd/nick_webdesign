@@ -17,3 +17,12 @@ function initMap() {
     });
 }
 
+$(document).ready(function() {
+
+	$('.toggle-nav').click(function(e) {
+		$(this).toggleClass('active');
+		$('.menit').toggleClass('active');
+		e.preventDefault();
+	});
+
+});
