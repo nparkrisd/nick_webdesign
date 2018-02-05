@@ -19,13 +19,39 @@ h3 {
 
 
 
+
+
+
+/*------Top Menu------*/
+.topmenu {
+	background-color: black;
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	z-index: 20;
+}
+
+
+
+
+
+
+
+
+
 /*------Paralax Images------*/
 .pximg1, .pximg2 {
  	position: relative;
   	background-attachment: fixed;
   	background-position: center;
   	background-repeat: no-repeat;
-  	background-size: cover
+  	background-size: cover;
+}
+
+.pximg3 {
+	position: relative;
+  	background-position: center;
+  	background-repeat: no-repeat;
 }
 
 .pximg1 {
@@ -35,6 +61,11 @@ h3 {
 
 .pximg2 {
 	background-image: url(images/tiger2.jpg);
+	min-height: 200px;
+}
+
+.pximg3 {
+	background-image: url(images/tiger3.jpg);
 	min-height: 200px;
 }
 
@@ -156,26 +187,11 @@ h3.navitb:hover {
   transition: all .5s;
 }
 
-
-
-
-
-
-
-
-/*------Colums------*/
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    padding-right: 0; 
-    padding-left: 0;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.wparagraphhelp {
+	text-align: justify;
+	padding: 20px 80px; 
+	background-color: white; 
+	color: #36393e;
 }
 
 .paragraphcl {
@@ -194,28 +210,53 @@ h3.navitb:hover {
   padding-top: 0px;
 }
 
-.paragraphcl2 {
-  background: black; 
-  padding: 15px 30px;
+.paragraphcl2 { 
+  padding: 15px 50px;
   margin: 0px 0px;
-  border-radius: 10px;
+  border-radius: 2px;
   text-align: center;
 }
 
-.paragraphcr2 {
-  background: black; 
-  padding: 15px 30px;
+.paragraphcr2 { 
+  padding: 15px 50px;
   margin: 0px 0px;
-  border-radius: 10px;
+  border-radius: 2px;
   text-align: center;
+}
+
+
+
+
+
+
+
+/*------Colums------*/
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-right: 0; 
+    padding-left: 0;
+}
+
+.column.help {
+    padding: 10px 40px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 #ti {
 	font-style: normal;
+	font-weight: bold;
 	letter-spacing: 5px;
  	text-transform: uppercase;
  	font-size: 15px;
-  	color: white;
+  	color: #202125;;
 
 }
 
@@ -232,8 +273,17 @@ h3.navitb:hover {
   		column-count: 1;
 	}
 
-
+	.wparagraphhelp {
+	padding: 20px 60px; 
+	}
 }
+
+@media only screen and (max-width: 1150px) {
+	.wparagraphhelp {
+	padding: 20px 30px; 
+	}
+}
+
 @media only screen and (max-width: 1050px) {
    	.column {
     	float: left;
@@ -253,6 +303,16 @@ h3.navitb:hover {
 
 	.disc {
   		column-count: 1;
+	}
+
+	.wparagraphhelp {
+	padding: 20px 100px; 
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.wparagraphhelp {
+	padding: 20px 10px; 
 	}
 }
 
@@ -310,5 +370,22 @@ h3.navitb:hover {
       	padding: 5px 5px;
       	border-radius: 3px;
     }
+
+    .wparagraphhelp {
+		padding: 20px 0px; 
+	}
+
+	.column.help {
+    	padding: 10px 30px;
+	}
+
+	.paragraphcl2 { 
+  		padding: 15px 10px;
+	}
+	
+	.paragraphcr2 { 
+ 		padding: 15px 10px;
+	}
+
 
 }
