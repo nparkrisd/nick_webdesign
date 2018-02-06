@@ -22,6 +22,8 @@ $(document).ready(function() {
 	$('.toggle-nav').click(function(e) {
 		$(this).toggleClass('active');
 		$('.menit').toggleClass('active');
+		$('.menitb').toggleClass('active');
+		$('.bord').toggleClass('active');
 		e.preventDefault();
 	});
 

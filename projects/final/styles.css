@@ -1,23 +1,23 @@
 /*------General Styles------*/
 body, html {
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
+	height: 100%;
+	margin: 0;
+	font: 400 15px/1.8 "Lato", sans-serif;
 }
 
 h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font: 20px "Lato", sans-serif;
+	color: #111;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 a {
-  color: #D89232;
+	color: #D89232;
 }
 
 
@@ -32,54 +32,62 @@ a {
 	width: 100%;
 	height: 55px;
 	z-index: 20;
-  text-align: center;
-  flex-wrap: wrap;
-  padding: 10px 0px;
+	text-align: center;
+	flex-wrap: wrap;
+	padding: 10px 0px;
 }
 
 
 
 h3.menit {
-  font-size: .9rem; 
-  display: inline-block;
-  padding: 5px 10px;
-  padding-right: 20px;
-  color: #fff;
-  transition: all .5s;
-  margin-top: 6px;
-  float: left;
+	font-size: .9rem; 
+	display: inline-block;
+	padding: 5px 10px;
+	padding-right: 20px;
+	color: #fff;
+	transition: all .5s;
+	margin-top: 6px;
+	float: left;
 }
 
 h3.menitb {
-  font-size: .9rem;
-  float: right; 
-  display: absolute;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: black;
-  font-weight: bold;
-  background: #D89232;
-  border-radius: 2px; 
-  margin-left: 0px;
-  margin-right: 10px;
-  margin-top: 0;
-  transition: all .5s;
+	font-size: .9rem;
+	float: right; 
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: black;
+	font-weight: bold;
+	background: #D89232;
+	border-radius: 2px; 
+	margin-left: 0px;
+	margin-right: 10px;
+	margin-top: 0;
+	transition: all .5s;
 }
 
 .toggle-nav {
-  text-decoration: none;
-  font-size: 2rem;
-  position: absolute;
-  left: 8px;
-  top: -10px;
-  padding: 0px 10px;
-  border-radius: 4px;
-  transform: translateY(20px);
-  color: rgba(255,255,255,0.8);;
-  background: rgba(0,0,0,0.5);
-  opacity: 0;
+	text-decoration: none;
+	font-size: 2rem;
+	position: absolute;
+	left: 8px;
+	top: -10px;
+	padding: 0px 10px;
+	border-radius: 4px;
+	transform: translateY(20px);
+	color: rgba(255,255,255,0);
+	background: rgba(0,0,0,0);
+}
+
+.bord {
+	position: fixed;
+	width: 350px;
+	height: 150px;
+	opacity: 0;
+	background-color: black;
+	border-bottom-right-radius: 6px;
 }
 
 
@@ -95,18 +103,18 @@ h3.menitb {
 
 
 /*------Paralax Images------*/
-.pximg1, .pximg2 {
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.pximg1, .pximg2, .pximg4 {
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.pximg3 {
+.pximg3, {
 	position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .pximg1 {
@@ -124,33 +132,45 @@ h3.menitb {
 	min-height: 200px;
 }
 
+.pximg4 { 
+	background-image: url(images/tiger4.jpg);
+	min-height: 500px;
+}
+
 .border {
-  color: #fff;
-  font-size: 25px;
-  letter-spacing: 10px;
-  text-transform: uppercase;
-  transition: all .5s;
+	color: #fff;
+	font-size: 25px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	transition: all .5s;
 }
 
 .bordersub {
-  color: #fff;
-  font-size: 20px;
-  letter-spacing: 10px;
-  text-transform: uppercase;
-  background-color: black;
-  padding: 5px 5px;
-  border-radius: 3px;
-  transition: all .5s;
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	background-color: black;
+	padding: 5px 5px;
+	border-radius: 3px;
+	transition: all .5s;
 }
 
 .caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
 }
 
+.caption2 {
+	position: absolute;
+	left: 0;
+	top: 15rem;
+	width: 100%;
+	text-align: center;
+}
 
 
 
@@ -166,7 +186,7 @@ h3.menitb {
 	padding: 10px 40px;
 	width: auto;
 	text-align: center;
-  transition: all .5s;
+	transition: all .5s;
 }
 
 h3.navit {
@@ -179,15 +199,15 @@ h3.navit {
 }
 
 h3.navitb {
-  font-size: .9rem;
-  text-align: center; 
-  display: inline-block;
-  padding: 5px 30px;
-  transition: all .5s;
-  background-color: #D89232; 
-  border-radius: 3px; 
-  color: #000; 
-  font-weight: 600;"
+	font-size: .9rem;
+	text-align: center; 
+	display: inline-block;
+	padding: 5px 30px;
+	transition: all .5s;
+	background-color: #D89232; 
+	border-radius: 3px; 
+	color: #000; 
+	font-weight: 600;"
 }
 
 h3.navit:hover {
@@ -195,7 +215,7 @@ h3.navit:hover {
 }
 
 h3.navitb:hover {
-  font-size: .95rem;
+	font-size: .95rem;
 }
 
 
@@ -207,9 +227,9 @@ h3.navitb:hover {
 
 /*------Geospatial Data Map------*/
 #map {
- width: 100%;
- height: 400px;
- background-color: grey;
+	width: 100%;
+	height: 400px;
+	background-color: grey;
 }
 
 
@@ -227,19 +247,19 @@ h3.navitb:hover {
 }
 
 .paragraph {
-  background: white; 
-  padding: 15px 20px;
-  column-count: 2;
-  column-rule: 1px solid;
-  column-gap: 60px;
-  transition: all .5s;
+	background: white; 
+	padding: 15px 20px;
+	column-count: 2;
+	column-rule: 1px solid;
+	column-gap: 60px;
+	transition: all .5s;
 }
 
 .disc {
-  background: white; 
-  padding: 15px 20px;
-  column-count: 1;
-  transition: all .5s;
+	background: white; 
+	padding: 15px 20px;
+	column-count: 1;
+	transition: all .5s;
 }
 
 .wparagraphhelp {
@@ -250,33 +270,33 @@ h3.navitb:hover {
 }
 
 .paragraphcl {
-  background: white; 
-  padding: 15px 20px;
-  border-right-width: 1px;
-  border-right-style: solid; 
-  border-right-color: black; 
-  padding-top: 0px;
+	background: white; 
+	padding: 15px 20px;
+	border-right-width: 1px;
+	border-right-style: solid; 
+	border-right-color: black; 
+	padding-top: 0px;
 }
 
 .paragraphcr {
-  background: white; 
-  padding: 15px 20px;
-  transition: all .5s;
-  padding-top: 0px;
+	background: white; 
+	padding: 15px 20px;
+	transition: all .5s;
+	padding-top: 0px;
 }
 
 .paragraphcl2 { 
-  padding: 15px 50px;
-  margin: 0px 0px;
-  border-radius: 2px;
-  text-align: center;
+	padding: 15px 50px;
+	margin: 0px 0px;
+	border-radius: 2px;
+	text-align: center;
 }
 
 .paragraphcr2 { 
-  padding: 15px 50px;
-  margin: 0px 0px;
-  border-radius: 2px;
-  text-align: center;
+	padding: 15px 50px;
+	margin: 0px 0px;
+	border-radius: 2px;
+	text-align: center;
 }
 
 
@@ -288,30 +308,30 @@ h3.navitb:hover {
 /*------Colums------*/
 
 .column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  padding-right: 0; 
-  padding-left: 0;
+	float: left;
+	width: 50%;
+	padding: 10px;
+	padding-right: 0; 
+	padding-left: 0;
 }
 
 .column.help {
-  padding: 10px 40px;
+	padding: 10px 40px;
 }
 
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 #ti {
 	font-style: normal;
 	font-weight: bold;
 	letter-spacing: 5px;
-  text-transform: uppercase;
-  font-size: 15px;
-  color: #202125;;
+	text-transform: uppercase;
+	font-size: 15px;
+	color: #202125;;
 
 }
 
@@ -324,87 +344,127 @@ h3.navitb:hover {
 
 /*------Responsive Layout------*/
 @media only screen and (max-width: 1350px) {
-  .paragraph {
-    column-count: 2;
-  }
+	.paragraph {
+		column-count: 2;
+	}
 
-  .disc {
-    column-count: 1;
-  }
+	.disc {
+		column-count: 1;
+	}
 
-  .wparagraphhelp {
-   padding: 20px 60px; 
- }
+	.wparagraphhelp {
+		padding: 20px 60px; 
+	}
 
 }
 
 @media only screen and (max-width: 1150px) {
 	.wparagraphhelp {
-   padding: 20px 30px; 
- }
+		padding: 20px 30px; 
+	}
 
 }
 
 @media only screen and (max-width: 1050px) {
-  .column {
-   float: left;
-   width: 100%;
-   padding: 10px;
-   padding-right: 0; 
-   padding-left: 0;
- }
+	.column {
+		float: left;
+		width: 100%;
+		padding: 10px;
+		padding-right: 0; 
+		padding-left: 0;
+	}
 
- .paragraphcl {
-  border-right-width: 0px;
-}
+	.paragraphcl {
+		border-right-width: 0px;
+	}
 
-.paragraph {
-  column-count: 1;
-}
+	.paragraph {
+		column-count: 1;
+	}
 
-.disc {
-  column-count: 1;
-}
+	.disc {
+		column-count: 1;
+	}
 
-.wparagraphhelp {
-  padding: 20px 100px; 
-}
+	.wparagraphhelp {
+		padding: 20px 100px; 
+	}
 
 }
 
 @media only screen and (max-width: 835px) {
-  h3.menit {
-    display: none;
-  }
+	
+	h3.menit {
+		display: none;
+	}
 
 
-  h3.active {
-    font-size: .9rem; 
-    display: inline-block;
-    padding: 5px 10px;
-    background: black;
-    padding-right: 400px;
-    color: #fff;
-    transition: all .5s;
-    margin-top: 6px;
-    float: left;
-  }
-}
+	h3.active {
+		font-size: .9rem; 
+		display: inline-block;
+		padding: 5px 10px;
+		background: none;
+		padding-right: 400px;
+		white-space: nowrap;
+		overflow: hidden;
+		color: #fff;
+		transition: all .5s;
+		margin-top: 6px;
+		float: left; 
+	}
 
-.toggle-nav {
-  text-decoration: none;
-  font-size: 2rem;
-  position: absolute;
-  left: 8px;
-  top: -10px;
-  padding: 0px 10px;
-  border-radius: 4px;
-  transform: translateY(12px);
-  color: rgba(255,255,255,1);;
-  background: rgba(0,0,0,0.0);
-  opacity: 1;
-}
+	div.active {
+		opacity: 1;
+		z-index: 10;
+	}
 
+	.toggle-nav {
+		text-decoration: none;
+		font-size: 2rem;
+		position: absolute;
+		left: 8px;
+		top: -10px;
+		padding: 0px 10px;
+		border-radius: 4px;
+		transform: translateY(12px);
+		color: rgba(255,255,255,1);
+		background: rgba(0,0,0,0.0);
+	}
+
+		h3.menitb {
+		font-size: .9rem;
+		float: right; 
+		display: inline-block;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		color: black;
+		font-weight: bold;
+		background: #D89232;
+		border-radius: 2px; 
+		margin-left: 70px;
+		margin-right: 10px;
+		margin-top: 0px;
+	}
+	
+
+	h3.menitb.active {
+		font-size: .9rem;
+		float: right; 
+		display: inline-block;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		color: black;
+		font-weight: bold;
+		background: #D89232;
+		border-radius: 2px; 
+		margin-left: 70px;
+		margin-right: 10px;
+		margin-top: 0px;
+	}
 
 }
 
@@ -412,80 +472,163 @@ h3.navitb:hover {
 
 @media only screen and (max-width: 750px) {
 	.wparagraphhelp {
-   padding: 20px 10px; 
- }
+		padding: 20px 10px; 
+	}
+
+
 }
 
 @media only screen and (max-device-width: 1024px) {
-  .pximg1 {
-   background-attachment: scroll;
- }
+	
+	.toggle-nav {
+		text-decoration: none;
+		font-size: 2rem;
+		position: absolute;
+		left: 8px;
+		top: -4px;
+		padding: 0px 10px;
+		border-radius: 4px;
+		transform: translateY(12px);
+		color: rgba(255,255,255,.8);
+		background: rgba(0,0,0,0.5);
+	}
 
- .pximg2 {
-   background-attachment: scroll;
- }
+	.topmenu {
+		background-color: rgba(0,0,0,0);
+		position: fixed;
+		width: 100%;
+		height: 55px;
+		z-index: 20;
+		text-align: center;
+		flex-wrap: wrap;
+		padding: 10px 0px;
+	}
+
+	h3.menitb {
+		font-size: .9rem;
+		float: left; 
+		display: none;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		color: black;
+		font-weight: bold;
+		background: #D89232;
+		border-radius: 2px; 
+		margin-left: 70px;
+		margin-right: 10px;
+		margin-top: 6px;
+	}
+	
+
+	h3.menitb.active {
+		font-size: .9rem;
+		float: left; 
+		display: inline-block;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		color: black;
+		font-weight: bold;
+		background: #D89232;
+		border-radius: 2px; 
+		margin-left: 70px;
+		margin-right: 10px;
+		margin-top: 6px;
+	}
+
+	div.active {
+		opacity: 1;
+		z-index: 10;
+		width: 100%
+	}
+
+	h3.menit.active {
+		font-size: .9rem; 
+		display: inline-block;
+		padding: 5px 10px;
+		background: none;
+		padding-right: 400px;
+		white-space: nowrap;
+		overflow: hidden;
+		color: #fff;
+		transition: all .5s;
+		margin-top: 6px;
+		float: left; 
+	}
 
 
- .wparagraph {
-   padding:10px 5vw;
- }
+	.pximg1 {
+		background-attachment: scroll;
+	}
 
- h3.navit {
-  font-size: .7rem;
-  background: black;
-  padding: 5px 10px;
-  font-weight: bold;
-} 
+	.pximg2 {
+		background-attachment: scroll;
+	}
 
-h3.navitb {
-  font-size: .7rem;
-  background: #D89232;
-  padding: 5px 10px;
-  font-weight: bold;
-}   
 
-h3.navit:hover {
- color: #fff;
- font-size: .9rem;
-}
+	.wparagraph {
+		padding:10px 5vw;
+	}
 
-h3.navitb:hover {
- color: #000;
- font-size: .9rem;
-}
+	h3.navit {
+		font-size: .7rem;
+		background: black;
+		padding: 5px 10px;
+		font-weight: bold;
+	} 
 
-.border {
- color: #fff;
- font-size: 20px;
- letter-spacing: 10px;
- text-transform: uppercase;
-}
+	h3.navitb {
+		font-size: .7rem;
+		background: #D89232;
+		padding: 5px 10px;
+		font-weight: bold;
+	}   
 
-.bordersub {
- color: #fff;
- font-size: 15px;
- letter-spacing: 10px;
- text-transform: uppercase;
- background-color: black;
- padding: 5px 5px;
- border-radius: 3px;
-}
+	h3.navit:hover {
+		color: #fff;
+		font-size: .9rem;
+	}
 
-.wparagraphhelp {
-  padding: 20px 0px; 
-}
+	h3.navitb:hover {
+		color: #000;
+		font-size: .9rem;
+	}
 
-.column.help {
- padding: 10px 30px;
-}
+	.border {
+		color: #fff;
+		font-size: 20px;
+		letter-spacing: 10px;
+		text-transform: uppercase;
+	}
 
-.paragraphcl2 { 
-  padding: 15px 10px;
-}
+	.bordersub {
+		color: #fff;
+		font-size: 15px;
+		letter-spacing: 10px;
+		text-transform: uppercase;
+		background-color: black;
+		padding: 5px 5px;
+		border-radius: 3px;
+	}
 
-.paragraphcr2 { 
-  padding: 15px 10px;
-}
+	.wparagraphhelp {
+		padding: 20px 0px; 
+	}
+
+	.column.help {
+		padding: 10px 30px;
+	}
+
+	.paragraphcl2 { 
+		padding: 15px 10px;
+	}
+
+	.paragraphcr2 { 
+		padding: 15px 10px;
+	}
 
 
 }

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/script.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKnhj5i_gMftPH71vVll7vBFCUgwBwuRk&callback=initMap"></script>
+</head>
+<body>
+	<!-- Header Bar -->
+	<div class="bord"></div>
+	<div class="topmenu">
+			<a href="#ti" shape="rect" style="text-decoration: none; color: black">
+				<h3 class="menitb">Help Now</a></h3>
+			</a>
+			<h3 class="menit"><a href="#nav0" style="text-decoration: none; color: white">Conflict And Coexistence</a></h3>
+			<h3 class="menit">The Writing</h3>
+			<h3 class="menit">Programs</h3>
+			<a class="toggle-nav" href="#">&#9776;</a>
+	</div>
+
+
+
+	<!-- The Header Image -->
+	<div id="nav0" class="pximg1"></div>
+	<div class="caption">
+		<span class="border">conflict and coexistence</span>
+		<br>
+		<span class="bordersub">Chitwan Tigers</span>
+	</div>
+	
+	<!-- Navagation Menu -->
+	<div class="bmenu">
+		<h3 class="navit"><a href="#nav1" style="text-decoration: none; color: white">the problems</a></h3>
+		<h3 class="navit"><a href="#nav2" style="text-decoration: none; color: white">Conflict & Threats</a></h3>
+		<h3 class="navit"><a href="#nav3" style="text-decoration: none; color: white">our coexistence & the solutions</a></h3>
+		<h3 class="navit"><a href="#nav4" style="text-decoration: none; color: white">How to help</a></h3>
+		
+	</div>
+
+	<!-- Paragraph One -->
+	<div class="wparagraph">
+		<h3 id="nav1" style="text-align: center; letter-spacing: 10px; margin-bottom: 10px;">The Problems</h3>
+		<p class="paragraph">The Bengal tigers (Panthera tigris) and villagers of Chitwan, Nepal have been in contention for decades (1979).  There have been more cases of tigers killing humans and their livestock in this past decade then ever before.  This will only continue as the population rises in both tigers and residence.  In 1950, After malaria was eliminated the population became a mixture of immigrants from surrounding countries and the indigenous peoples of Chitwan.  This brought a new population of farmers who required land as a place to farm and graze livestock.  In 1973 the Chitwan National Park (CNP) was established bringing in new tourists seeking entertainment, research, work, etc.  Villagers became less reliant on subsistence agriculture for their source income due to increased eco-tourism in newer generations.  With these new generations the population has increased to 579,984 people (279,087 male and 300,897 female) in 2011. <br><br> After Chitwan National Park had established its boundaries, (1999) 223,260 people were living within its buffer zones (an area of land designated for environmental protection).  As these new zones were allocated, authorities forced villagers to relocate in the name of new conservation efforts, with little to no compensation.  Most villagers affected depend on the agriculture, or livestock for a living. Farmers depend on livestock manure for fertilizer, and as important sources of food and protein.  Access to the forest for grazing, cutting of tree branches for fodder, and fuel-wood are a important part of these people's lives. <br><br>Furthermore, The trend of killing humans has exponentially increased over past few decades from 1.2 persons per year in 1998 to 7.2 per year in 2006.  A study on the traits of human killing tigers by thg Global Ecology and Conservation group have concluded that transient tigers without a territory, or physically impaired are most likely to cause conflict.  Tigers in areas scarce of wild pray will feed on livestock, affecting villagers who depend on them for income, often resulting in no compensation.  This is due to the estimated 120 and rising population of tigers that live in the CNP, on top of Nepal committing to double the population by 2020 (250 tigers estimated).</p>
+	</div>
+
+	<!-- Google API Map -->
+	<div class="wparagraph">
+		<h3 id="nav2" style="text-align: center; letter-spacing: 10px; margin-bottom: 15px;">Conflict area geospatial data map</h3>
+		<div id="map"></div>
+		<p class="paragraph disc">The blue markers represent Problem tigers camera trapped, rescued or killed location in Chitwan National Park and surrounding areas during 2008–2016. The red polygons represent the individual tiger locations of camera traps.  Data pulled from Global Ecology and Conservation study, July 2017.</p>
+	</div>
+
+	<!-- Statistics -->
+	<div class="wparagraph" style="padding-top: 20px;">
+		<h3 style="text-align: center; letter-spacing: 10px; margin-bottom: 5px; margin-top: 50px;">Conflicts & Threats</h3>
+		<div class="middleline"></div>
+		<p class="paragraph disc">Each threat/conflict listed will fall under one of three categories: i)minor threats/conflicts, ii)threats/conflicts, iii)major threats/conflicts.  Each category applies to both, humans and tigers.  This data will help determine which areas collide, and cause conflict with the other species</p>
+		<div class="row">
+			<div class="column">
+				<h3 style="text-align: center; letter-spacing: 8px; margin-top: 20px; font-size: 13px; margin-bottom: 60px;">tiger threats & conflicts</h3>
+				<p class="paragraphcl">
+					<strong>Minor Conflicts/Threats</strong><br>
+					1) Maggot Wounds - The Bengal tiger (Panthera tigris) like other large felines are susceptible to a wide variety of diseases and infection.  Maggot wounds (Myiasis) is a parasitic infection where larvae (maggots) grow inside and feed on the tissue of the tigers.  Myiasis can affect the tigers sleeping pattern and cause annoyance.<br><br>
+					<strong>Conflicts/Threats</strong><br>
+					2) Lack of Wild Prey  - The Bengal tigers main food source of food is 97% dependant on wild pray. The Chital deer (45%), Samber (23%), wild pig (15%), hog deer (9%).  Problem occurs when tigers venture into new conservation areas lacking of wild pray, this then drives the tigers to feed on livestock (buffalo (5%), and cow (2%) potentially being killed or injured by farmers.<br><br>
+					3) <strong>Lack</strong> of Territory - Chitwan national park has an area of 931.8 km². The tiger population in the area is around 125 tigers with a 26 tiger estimation difference.  The population is growing, requiring transient tigers to find new territories outside of the park, into the buffer zones where farmers still graze livestock and cut grass (contact with farmers often result in a human-killing tiger).<br><br>
+					<strong> Major Conflicts/Threats</strong><br>
+					4) Retaliation From Humans - Tigers located within the Chitwan National Park are not all human-killers. Oftentimes, it is perceived they ar, primarily by villagers who either, have had family killed, or involved in a tiger attack.  In retaliation villagers will take the problem into their own hands, which can result in the killing of a different tiger.<br><br></p>
+				</div>
+				<div class="column">
+					<h3 style="text-align: center; letter-spacing: 8px; margin-top: 20px; font-size: 13px; margin-bottom: 60px;">human threats & conflicts</h3>
+					<p class="paragraphcr">
+						<strong>Minor Conflicts/Threats</strong><br>
+						1)  Dengue Fever - A mosquito (Aedes aegypti) viral disease located within the urban areas of nepal; manifests as sudden onset of fever and severe headache; occasionally produces shock and hemorrhage leading to death in 5% of cases. Dengue is a recent attraction for research due to its rapid global spread.<br><br>
+						<strong>Conflicts/Threats</strong><br>
+						2) Re-location - Villagers who live near the edge of the reserve have often been relocated in order to preserve the area for conservation.  Most villagers who are relocated (98%) support the Bengal tigers and are glad to relocate because of the declining forest productivity, but most are still continuing to receive little to no compensation.<br><br> 
+						<strong> Major Conflicts/Threats</strong><br>
+						3) Living Area - Villagers who are located within the buffer zone are prone to tiger attacks.  Families are often disadvantaged with lack of education, and safety from authorities.  Although, tigers attacks primarily happen within the core areas of the park.<br><br>
+						4) <strong>Poverty</strong> - More than 30% of Nepal's residence live on less than US$14 per person, per month, according to the national living standards survey conducted in 2010-2011.  In the buffer areas this rate is even lower as most of the villagers depend on subsistence farming and agriculture.<br><br></p>
+					</div>
+				</div>	
+			</div>
+
+			<!-- Our CoExistence -->
+			<div class="wparagraph">
+				<div class="pximg2">
+					<h3 id="nav3" style="text-align: center; letter-spacing: 10px; margin-bottom: 10px; padding-top: 100px; color: white; margin-top: 0px;">our coexistence</h3>
+				</div>
+				<p class="paragraph" style="margin-top: 25px;";>Tigers and Humans have coexisted in Nepal since before national parks have been in use.  Most tigers today have managed to survive under the strict limitations humans have given them.  now the people of nepal live closer to tigers than ever before.  This will continue as the population of both humans and tigers continue to grow. In Chitwans buffer zones where two-hundred thousand or more villagers live interactions between tigers and humans are very likely it occur.  Some villages are unable to live elsewhere due to financial issues.  <br><br> In the more  touristy areas of chitwan there those who take part in elephant safaris.  These safaris take a group of 5-6 people through the national park, passing by rhinos and sometime tigers.  There are not any cases of this disturbing the tigers yet it shows how we have adapted to co-exist with these animals. Aside from elephant safaris photographers and scientists have commonly gone on foot inorder to get into their environment and study the tigers up close.  Must research on tiger population uses camera trap tech which also poses the question whether or not that is potentially harmful information for poachers.</p>
+				<h3 style="text-align: center; letter-spacing: 8px; margin-top: 25px; font-size: 13px;"><strong>The Solutions</strong></h3>
+				<p class="paragraph" style="margin-top: 25px;";>Solutions for the human tiger conflicts are not easy.  the people of Chitwan have worshiped these animals for decades.  The Bengal tiger is seen as a vehicle of the gods to most of them.  In Chitwan 86% of the villagers show awareness to the environmental imbalance there would be without them.  It is understood that without the tigers there crops would be eaten by deer, or the forests wouldn't be as preserved because of regulation.  These are all facts that most villagers know as common knowledge. <br><br> Studies have shown that with a carefully monitored tiger population and faster response times to tigger conflict a more maintainable peace between the people and tigers could be achieved.  There needs to be a more reliable education programs to educate landowners on how to react and avoid conflict; Encouraging the people to accept the tigers as a part of their ecosystem instead of a threat to their lives.  If long term tiger monitoring was integrated with their daily lives they could prevent potential attacks before they happen.  Lastly, the communities of nepal are very poor, which is one reason education is so inadequate.  If people who are willing and able to donate to the families of nepal maybe there is hope for change.</p>
+			</div>
+
+			<!-- How you can help area -->
+			<div id="nav4" class="wparagraphhelp">
+				<div class="pximg3">
+					<h3 style="text-align: center; letter-spacing: 10px; margin-bottom: 30px; padding-top: 100px; color: white; margin-top: 0px;">How to Help</h3>
+				</div>
+				<div class="row">
+					<div class="column help">
+						<p class="paragraphcl2">
+							<em id="ti">non-nepal resident</em>
+							<br><br>
+							<strong>Sponsor Education</strong>: It is important to the lives of the newer generations in Nepal to have an education.  Currently education is scarce due to poor living conditions, poverty, and location.  Villagers who live within buffer zone are 1) prone to tiger attacks, and 2) have little access to education.  You can donate towards funding new education initiatives <a href=http://www.nepalyouthfoundation.org/donate/sponsor-a-student/ target=”_blank”>Here</a> (Nepal Youth Foundation) or <a href=https://www.globalgiving.org/projects/give-the-gift-of-education-in-nepal/ target=”_blank”>Here</a> (Global Giving).
+							<br><br>
+							<strong>Support Tiger Conservation</strong>: Tiger conservation inside of Nepal had need for constant support.  With more funding, conflict prevention strategies can be implemented.  You can stand with people of nepal and help support these tigers by donating <a href=https://secure.wcs.org/donate/donate-and-help-save-wildlife?_ga=2.22403129.327002529.1517846609-730659100.1517846609 target=”_blank”>Here</a> (WCS) or <a href=http://join.wwfindia.org/generic-signup.php?ref=tiger&source=WWF-JOIN-WEB target=”_blank”>Here</a> (WWF Tiger Brigade). 
+							<br><br>
+							<strong>Be a responsible tourist</strong>: The National Parks are there to protect the tigers.  As a visitor, inside of their territory, be responsible and do-not invade their space.  Chitwan National Park has preserved there forests to keep the animals within in there healthiest living conditions,  do not leave any trash, or personal belonging inside of the park to prevent any damage.
+							<br><br>
+							<strong>Help erase the wildlife trade</strong>: If at home or visiting Nepal do not purchase any tiger parts if offered.  Report any illegal tiger part dealers to authorities.  Dispose of any tiger parts if handed down or given as a gift to you. 
+							<br><br>
+							<strong>Vote</strong>: If of the voting age in your country vote for representatives who support wildlife conservation; and or vote against those who are against wildlife conservation.
+						</p>
+					</div>
+					<div class="column help">
+						<p class="paragraphcr2">
+							<em id="ti">nepal resident</em>
+							<br><br>
+							<strong>Work at a national park</strong>: Work for national parks such as Chitwan National Park or the Bor Tiger Reserve to help prevent tiger attacks and monitor dangerous tigers.  Long-term tiger monitoring is one of the most influential methods of preventing conflict between humans and tigers.
+							<br><br>
+							<strong>Volunteer at an orphanage</strong>: By volunteering at orphanages, you can help educate children or provide children with homes who may end up in poor areas near the buffer zones.
+							<br><br>
+							<strong>Take proper precaution</strong>: If you find yourself face to face with a tiger do not run. Like all cats, tigers enjoy a chase.  Position yourself somewhere high up (a tree or roof).  Stay standing , Tigers do not distinguish between a crouched human, a warthog or a deer.
+							<br><br>
+							<strong>Don’t support the wildlife trade</strong>: Do not purchase any tiger parts from vendors.  Report any illegal tiger part dealers to authorities.  Dispose of any tiger parts if handed down or given as a gift to you.
+							<br><br>
+							<strong>Limit gathering resources in buffer zones and parks</strong>: Try and find resources away from nation park areas to help preserve wildlife territories.  If collecting from buffer zone areas take precaution that tigers may be near by and limit fodder collection and grazing.
+
+
+						</p>
+					</div>
+				</div>	
+			</div>
+
+
+		</body>
+
+		</html>
