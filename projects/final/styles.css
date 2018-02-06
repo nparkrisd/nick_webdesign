@@ -75,7 +75,7 @@ h3.menitb {
 	left: 8px;
 	top: -10px;
 	padding: 0px 10px;
-	border-radius: 4px;
+	border-radius: 10px;
 	transform: translateY(20px);
 	color: rgba(255,255,255,0);
 	background: rgba(0,0,0,0);
@@ -138,6 +138,14 @@ h3.menitb {
 }
 
 .border {
+	color: #fff;
+	font-size: 25px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	transition: all .5s;
+}
+
+.border2 {
 	color: #fff;
 	font-size: 25px;
 	letter-spacing: 10px;
@@ -425,7 +433,7 @@ h3.navitb:hover {
 		left: 8px;
 		top: -10px;
 		padding: 0px 10px;
-		border-radius: 4px;
+		border-radius: 10px;
 		transform: translateY(12px);
 		color: rgba(255,255,255,1);
 		background: rgba(0,0,0,0.0);
@@ -479,7 +487,11 @@ h3.navitb:hover {
 }
 
 @media only screen and (max-device-width: 1024px) {
-	
+	.border2 {
+		font-size: 20px;
+	}
+
+
 	.toggle-nav {
 		text-decoration: none;
 		font-size: 2rem;
@@ -487,7 +499,7 @@ h3.navitb:hover {
 		left: 8px;
 		top: -4px;
 		padding: 0px 10px;
-		border-radius: 4px;
+		border-radius: 10px;
 		transform: translateY(12px);
 		color: rgba(255,255,255,.8);
 		background: rgba(0,0,0,0.5);
@@ -568,6 +580,9 @@ h3.navitb:hover {
 		background-attachment: scroll;
 	}
 
+	.pximg4 {
+		background-attachment: scroll;
+	}
 
 	.wparagraph {
 		padding:10px 5vw;
